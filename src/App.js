@@ -11,7 +11,11 @@ function App() {
         </p>
         <a
           className="App-link"
+<<<<<<< HEAD
           href="https://www.globoesporte.com.br"
+=======
+          href="https://www.netsono.com.br"
+>>>>>>> Branch title with master
           target="_blank"
           rel="noopener noreferrer"
         >
