@@ -1,24 +1,15 @@
-import logo from "./logo.svg";
 import "./App.css";
+import FormRegister from "./components/form/form";
+import { Container, Typography } from "@material-ui/core";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://www.react.com.br"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container component={"article"} maxWidth="sm">
+      <Typography variant="h1" component="h2">
+        Formulário de Cadastro
+      </Typography>
+      <FormRegister />
+    </Container>
   );
 }
 
