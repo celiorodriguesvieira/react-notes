@@ -9,9 +9,19 @@ function App() {
       <Typography variant="h4" component="h1" align="center">
         Formulário de Cadastro
       </Typography>
-      <FormRegister />
+      <FormRegister send={sendForm} validCPF={validCPF} />
     </Container>
   );
 }
+function sendForm(data) {
+  console.log(data);
+}
 
+function validCPF(cpf) {
+  if (cpf.length !== 11) {
+    return { valid: false, text: "CPF deve ter 11 digitos!" };
+  } else {
+    return { valid: true, text: "" };
+  }
+}
 export default App;
